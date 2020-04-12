@@ -51,6 +51,7 @@ check_unzip (const char *pw)
   int status;
 
   sprintf (buff, "unzip -qqtP \"%s\" %s " DEVNULL, pw, file_path[0]);
+  /* sprintf (buff, "7z x -p \"%s\" %s " DEVNULL, pw, file_path[0]); */
   status = system (buff);
 
 #undef REDIR
